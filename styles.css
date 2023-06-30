@@ -1,6 +1,40 @@
 body {
   display: flex;
   flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* mandatory, so the browser doesn't manipulate these automatically */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Make Links non-purple/stylized */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  margin-left: 40px;
+}
+
+.header-logo {
+  box-sizing: border-box;
 }
 
 
+.header-links{
+  /* remove bullet pts for Unordered-lists (need to apply to UL class)*/
+  list-style: none;
+  /* display UL horizontally */
+  display: flex;
+  color: #E5E7EB;
+  gap: 10px;
+  margin-right: 40px;
+}
