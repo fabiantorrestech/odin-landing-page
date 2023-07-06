@@ -2,6 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 /* mandatory, so the browser doesn't manipulate these automatically */
@@ -16,25 +18,149 @@ a {
   color: inherit;
 }
 
+/* ----------- */
+
 .header-navbar {
   display: flex;
   justify-content: space-between;
   background-color: #1F2937;
   color: #F9FAF8;
-  margin-left: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.header-logo {
-  box-sizing: border-box;
+.header-navbar .header-logo {
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-navbar .header-logo img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.header-navbar .header-logo h1 {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 
-.header-links{
+.header-navbar .header-links{
   /* remove bullet pts for Unordered-lists (need to apply to UL class)*/
   list-style: none;
   /* display UL horizontally */
   display: flex;
+  align-items: center;
   color: #E5E7EB;
+  font-size: 18px;
   gap: 10px;
-  margin-right: 40px;
+}
+
+/* ----------- */
+
+.hero-container {
+  display: flex;
+  background-color: #1F2937;
+  color: #E5E7EB;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  gap: 10px;
+}
+
+.hero-container h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+}
+
+.hero-container p {
+  margin-bottom: 25px;
+}
+
+.hero-container .blue-button {
+  background-color: #3882F6;
+  color: #E5E7EB;
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.hero-container .hero-image {
+  box-sizing: border-box;
+  /* flex: auto; */
+  height: 200px;
+  width: auto;
+}
+
+/* ----------- */
+
+
+.info-images h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+.info-images-collection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #959596;
+  text-align: center;
+}
+
+.mouse-image-with-text img {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mouse-image-with-text p {
+  color: #959596;
+  text-align: center;
+}
+
+/* These containers are 200x200px containers that house the images with borders. */
+.mouse-image-container {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #3882F6;
+  border-radius: 8px;
+}
+
+.mouse-image-textbox {
+  height: 200px;
+  width: 200px;
+}
+
+/* ------------ */
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  color: #1F2937;
+  padding: 10%;
+}
+
+.testimonial-section .quote {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+}
+
+.testimonial-section .person {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 2%;
 }
