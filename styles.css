@@ -25,8 +25,8 @@ a {
   justify-content: space-between;
   background-color: #1F2937;
   color: #F9FAF8;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .header-navbar .header-logo {
@@ -68,8 +68,8 @@ a {
   justify-content: space-between;
   background-color: #1F2937;
   color: #E5E7EB;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-bottom: 10%;
   gap: 10px;
 }
@@ -97,14 +97,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: auto;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .hero-container .hero-img-container 
 img {
   box-sizing: border-box;
-  max-width: 500px;
+  max-width: 80%;
   max-height: auto;
+  object-fit: contain;
 }
 
 /* ----------- */
@@ -115,12 +117,13 @@ img {
   font-size: 36px;
   font-weight: bolder;
   color: #1F2937;
+  margin: 50px;
 }
 
 .info-images-collection {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
   color: #959596;
   text-align: center;
 }
@@ -157,14 +160,17 @@ img {
   flex-direction: column;
   background-color: #E5E7EB;
   color: #1F2937;
-  padding: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .testimonial-section .quote {
   font-size: 36px;
   font-weight: lighter;
   font-style: italic;
-  text-align: center;
+  text-align: left;
 }
 
 .testimonial-section .person {
@@ -181,8 +187,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px;
-  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
   border-radius: 9px;
   gap: 10px;
   color: #F9FAF8;
